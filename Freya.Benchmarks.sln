@@ -20,6 +20,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CB16A969
 		tests\Freya.Benchmarks\Freya.Benchmarks.fsproj.paket.references = tests\Freya.Benchmarks\Freya.Benchmarks.fsproj.paket.references
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{FD39E724-0A5B-47F5-B3E1-F5F662887277}"
+	ProjectSection(SolutionItems) = preProject
+		build.cmd = build.cmd
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,5 +43,6 @@ Global
 		{6F0F11B3-9A12-4982-A6FE-CFFB35637320} = {C881F3FE-41E5-48F3-8E04-19B0C7489085}
 		{A313BA29-0C5F-4719-8D73-64C5998C40EA} = {9759C653-F55A-4FAD-84C0-BE50D2EA6A4E}
 		{CB16A969-44EC-49EA-ADF5-9F950D7E716D} = {6F0F11B3-9A12-4982-A6FE-CFFB35637320}
+		{FD39E724-0A5B-47F5-B3E1-F5F662887277} = {C881F3FE-41E5-48F3-8E04-19B0C7489085}
 	EndGlobalSection
 EndGlobal
