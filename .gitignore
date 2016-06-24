@@ -183,3 +183,4 @@ FakesAssemblies/
 
 # FSharp Lint
 *.FSharpLint
+!local/packages
