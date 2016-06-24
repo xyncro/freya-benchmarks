@@ -1,0 +1,16 @@
+group Build
+
+  source http://nuget.org/api/v2
+
+  nuget Fake
+  github xyncro/build build.fsx
+
+group Test
+
+  framework: >= net45
+  source http://nuget.org/api/v2
+  source https://www.myget.org/F/freya/api/v2
+
+  nuget BenchmarkDotNet
+  nuget Freya           ~> 3.0.0-b
+  nuget Freya.Testing   ~> 3.0.0-b
