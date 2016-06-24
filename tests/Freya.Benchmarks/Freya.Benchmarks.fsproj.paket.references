@@ -1,5 +1,4 @@
 ﻿group Test
 
   BenchmarkDotNet
-  Freya
-  Freya.Testing
+  BenchmarkDotNet.Diagnostics.Windows

@@ -1,5 +1,6 @@
 ﻿// Freya
 
+open Freya.Benchmarks
 open Freya.Core
 open Freya.Machines.Http
 open Freya.Routers.UriTemplate
@@ -31,7 +32,7 @@ let router =
 open BenchmarkDotNet.Attributes
 open BenchmarkDotNet.Running
 
-type Benchmarks () =
+type FreyaHopac () =
 
     [<Benchmark>]
     member __.Default () =
@@ -42,6 +43,6 @@ type Benchmarks () =
 [<EntryPoint>]
 let main _ =
 
-    let summary = BenchmarkRunner.Run<Benchmarks> ()
+    let _ = BenchmarkRunner.Run<FreyaHopac> (benchmarkConfiguration)
 
     0

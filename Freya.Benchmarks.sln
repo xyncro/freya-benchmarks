@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sln", "sln", "{C881F3FE-41E5-48F3-8E04-19B0C7489085}"
 EndProject
@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependencies", "dependencie
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9759C653-F55A-4FAD-84C0-BE50D2EA6A4E}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Benchmarks", "tests\Freya.Benchmarks\Freya.Benchmarks.fsproj", "{A313BA29-0C5F-4719-8D73-64C5998C40EA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CB16A969-44EC-49EA-ADF5-9F950D7E716D}"
 	ProjectSection(SolutionItems) = preProject
+		tests\Freya.Benchmarks.Async\Freya.Benchmarks.Async.fsproj.paket.references = tests\Freya.Benchmarks.Async\Freya.Benchmarks.Async.fsproj.paket.references
 		tests\Freya.Benchmarks\Freya.Benchmarks.fsproj.paket.references = tests\Freya.Benchmarks\Freya.Benchmarks.fsproj.paket.references
+		tests\Freya.Benchmarks.Hopac\Freya.Benchmarks.Hopac.fsproj.paket.references = tests\Freya.Benchmarks.Hopac\Freya.Benchmarks.Hopac.fsproj.paket.references
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{FD39E724-0A5B-47F5-B3E1-F5F662887277}"
@@ -25,24 +25,40 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{FD39E724
 		build.cmd = build.cmd
 	EndProjectSection
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Benchmarks.Hopac", "tests\Freya.Benchmarks.Hopac\Freya.Benchmarks.Hopac.fsproj", "{99036596-CE4E-4153-BF74-80601647E612}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Benchmarks.Async", "tests\Freya.Benchmarks.Async\Freya.Benchmarks.Async.fsproj", "{0E1FD36B-E604-4D99-A052-1E654E136A7C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Benchmarks", "tests\Freya.Benchmarks\Freya.Benchmarks.fsproj", "{FBA7951C-7243-44A0-BD62-1A5EB47113AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A313BA29-0C5F-4719-8D73-64C5998C40EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A313BA29-0C5F-4719-8D73-64C5998C40EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A313BA29-0C5F-4719-8D73-64C5998C40EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A313BA29-0C5F-4719-8D73-64C5998C40EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99036596-CE4E-4153-BF74-80601647E612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99036596-CE4E-4153-BF74-80601647E612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99036596-CE4E-4153-BF74-80601647E612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99036596-CE4E-4153-BF74-80601647E612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E1FD36B-E604-4D99-A052-1E654E136A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E1FD36B-E604-4D99-A052-1E654E136A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E1FD36B-E604-4D99-A052-1E654E136A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E1FD36B-E604-4D99-A052-1E654E136A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA7951C-7243-44A0-BD62-1A5EB47113AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA7951C-7243-44A0-BD62-1A5EB47113AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA7951C-7243-44A0-BD62-1A5EB47113AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA7951C-7243-44A0-BD62-1A5EB47113AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6F0F11B3-9A12-4982-A6FE-CFFB35637320} = {C881F3FE-41E5-48F3-8E04-19B0C7489085}
-		{A313BA29-0C5F-4719-8D73-64C5998C40EA} = {9759C653-F55A-4FAD-84C0-BE50D2EA6A4E}
 		{CB16A969-44EC-49EA-ADF5-9F950D7E716D} = {6F0F11B3-9A12-4982-A6FE-CFFB35637320}
 		{FD39E724-0A5B-47F5-B3E1-F5F662887277} = {C881F3FE-41E5-48F3-8E04-19B0C7489085}
+		{99036596-CE4E-4153-BF74-80601647E612} = {9759C653-F55A-4FAD-84C0-BE50D2EA6A4E}
+		{0E1FD36B-E604-4D99-A052-1E654E136A7C} = {9759C653-F55A-4FAD-84C0-BE50D2EA6A4E}
+		{FBA7951C-7243-44A0-BD62-1A5EB47113AC} = {9759C653-F55A-4FAD-84C0-BE50D2EA6A4E}
 	EndGlobalSection
 EndGlobal
