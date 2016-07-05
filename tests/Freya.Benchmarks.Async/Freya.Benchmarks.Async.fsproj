@@ -237,8 +237,8 @@
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6' Or $(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2')">
       <ItemGroup>
-        <Reference Include="Freya.Routers.UriTemplate">
-          <HintPath>..\..\packages\test\Freya.Routers.UriTemplate\lib\net452\Freya.Routers.UriTemplate.dll</HintPath>
+        <Reference Include="Freya.Routers.Uri.Template">
+          <HintPath>..\..\packages\test\Freya.Routers.Uri.Template\lib\net452\Freya.Routers.Uri.Template.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>

@@ -3,7 +3,7 @@
 open Freya.Benchmarks
 open Freya.Core
 open Freya.Machines.Http
-open Freya.Routers.UriTemplate
+open Freya.Routers.Uri.Template
 open Freya.Testing
 open Freya.Types.Http
 open Freya.Types.Language
