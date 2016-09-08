@@ -1,4 +1,0 @@
-﻿group Test
-
-  BenchmarkDotNet
-  BenchmarkDotNet.Diagnostics.Windows

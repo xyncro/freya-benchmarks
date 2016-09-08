@@ -5,22 +5,19 @@ group Build
   nuget Fake
   github xyncro/build build.fsx
 
+group Katana
+
+  framework: >= net45
+  source http://nuget.org/api/v2
+
+  nuget Microsoft.Owin.SelfHost
+
 group Test
 
   framework: >= net45
-  source local/packages
   source http://nuget.org/api/v2
-  source https://www.myget.org/F/freya/api/v2
 
-  nuget BenchmarkDotNet
-  nuget BenchmarkDotNet.Diagnostics.Windows
+  // Freya
 
-  // Async
-
-  nuget Freya               ~> 3.0.0-b
-  nuget Freya.Testing       ~> 3.0.0-b
-
-  // Hopac
-
-  nuget Freya.Hopac         ~> 3.0.0-b
-  nuget Freya.Testing.Hopac ~> 3.0.0-b
+  nuget Freya       ~> 3.0.0-rc
+  nuget Freya.Hopac ~> 3.0.0-rc

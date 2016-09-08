@@ -1,0 +1,7 @@
+﻿group Katana
+
+  Microsoft.Owin.SelfHost
+
+group Test
+
+  Freya
